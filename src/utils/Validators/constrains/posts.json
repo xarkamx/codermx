@@ -1,0 +1,8 @@
+{
+  "fkCiudad": { "required": true, "target": "location" },
+  "fkEstado": { "required": true, "target": "location" },
+  "fkcategoria": { "required": true },
+  "fkGenero": { "required": true },
+  "descripcion": { "required": true },
+  "imagen_01": { "required": true, "target": "imagenes" }
+}
