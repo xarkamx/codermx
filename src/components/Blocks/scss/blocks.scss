@@ -1,0 +1,15 @@
+.CompanyBlock {
+  .gridItem {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-shadow: 20px 20px 1px #ccc;
+    z-index: 2;
+    .title {
+      font-size: 5.5vw;
+    }
+  }
+}

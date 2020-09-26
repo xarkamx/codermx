@@ -5,9 +5,15 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  height: fit-content;
+  height: 5vh;
   width: fit-content;
   .logo {
-    font-size: 131px;
+    font-size: 5.5vw;
+    font-family: "LG Display";
+  }
+  .hashtag {
+    float: right;
+    font-size: 20px;
+    padding-top: 1.5vw;
   }
 }

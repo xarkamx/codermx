@@ -3,8 +3,11 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../assets/fonts/fonts.css"
-import { FullScreenBlock } from "../components/Blocks"
 import { Logo } from "../components/Logo/logo"
+import webarriba from "../assets/images/webarriba.png"
+import webgdl from "../assets/images/webgdl.png"
+import { CompanyBlock } from "./../components/Blocks/company"
+import { FullScreenBlock } from "../components/Blocks/Blocks"
 export default function Home({ data }) {
   return (
     <Layout>
@@ -13,15 +16,14 @@ export default function Home({ data }) {
         <Logo />
         <h1>My WordPress Blog</h1>
         <h4>Posts</h4>
-        <div
-          style={{
-            clipPath:
-              "polygon(0 0, 100% 0, 44% 49%, 100% 100%, 0 100%, 0% 50%)",
-          }}
-        >
-          aqui
-        </div>
       </FullScreenBlock>
+      <CompanyBlock img={webarriba} face={1} title={"Webarriba"}></CompanyBlock>
+      <CompanyBlock img={webgdl} face={0} title={"web-gdl"}></CompanyBlock>
+      <CompanyBlock
+        img={webgdl}
+        face={1}
+        title={"Solid Servicios"}
+      ></CompanyBlock>
     </Layout>
   )
 }
